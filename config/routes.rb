@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get     "about" => "about#index"
 
-  get   "password" => "passwords#edit"
+  get   "password" => "passwords#edit", as: :edit_password
   patch "password" => "passwords#update"
 
   get    "sign_up" => "registrations#new"
